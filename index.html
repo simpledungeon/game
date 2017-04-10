@@ -1,0 +1,131 @@
+<!DOCTYPEhtml>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="Main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+<body>
+
+</body>
+<div class="hero">
+<div class="goldhead">
+<h1>GoldFour Studios</h1>
+</div>
+
+
+
+
+
+
+</div>
+<div class="gametitle">
+<h1>A Simple Dungeon</h1>
+<h3>For Detailed update logs and news, Please click <a href="news.html">Here</a>
+</div>
+<div class="buttoncenter">
+<a href="index.html" class="btn1">Play</a>
+<a href="credits.html" class="btn2">Credits</a>
+</div>
+
+    <meta charset="utf-8">
+    <title>A Simple Dungeon?</title>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./characters.js"></script>
+    <script type="text/javascript" src="./dungeonGenerator.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+   
+</head>
+<div class="game">
+
+    <div id="container">
+    <div class="gameborder">
+        <canvas id="gameWorld" tabindex="1" width="800" height="600" style="border: 1px red; background: black; text-align: center;"></canvas>
+        </div>
+    </div>
+    <div>Default Controls: WASD to move, Space to Hack 'n Slash, B to shoot a fire ball, M to mute sound</div>
+    <div>Now it gets harder the further you get!! Work for those High Scores!</div>
+    <div>
+        Remappable Controls: (insert the letter value of the key you would like to use for each control)
+    </div>
+    <div>
+        Up: - - - - - - -
+        <input type="text" id="up" value="W" style="width:15px">
+    </div>
+    <div>
+        Down: - - - - -
+        <input type="text" id="down" value="S" style="width:15px">
+    </div>
+    <div>
+        Left: - - - - - -
+        <input type="text" id="left" value="A" style="width:15px">
+    </div>
+    <div>
+        Right:  - - - - -
+        <input type="text" id="right" value="D" style="width:15px">
+    </div>
+    <div>
+        Swing:   - - - -
+        <input type="text" id="swing" value=" " style="width:15px">
+    </div>
+    <div>
+        Fire Ball: - - -
+        <input type="text" id="spell" value="B" style="width:15px">
+    </div>
+    <div>
+        Mute: - - - - -
+        <input type="text" id="mute" value="M" style="width:15px">
+    </div>
+    <div>
+        Restart: - - - -
+        <input type="text" id="restart" value="R" style="width:15px">
+    </div>
+    <audio id="footstep" >
+        <source src="./sound/footstep.mp3" type="audio/mpeg">
+        Your browser does not support <code> audio </code> element.
+    </audio>
+    <audio id="swoosh">
+        <source  src="./sound/swoosh.wav" type="audio/wav">        
+         Your browser does not support <code> audio </code> element.
+    </audio>       
+    <audio id="bloodSquirt">
+        <source src="./sound/blood squirt.wav" type="audio/wav">        
+         Your browser does not support <code> audio </code> element.
+    </audio> 
+    <audio id="bubble">
+        <source src="./sound/bubble.wav" type="audio/wav" #t=,0.02>        
+         Your browser does not support <code> audio </code> element.
+    </audio> 
+    <audio id="gameOver">
+        <source src="./sound/gameOver.wav" type="audio/wav">        
+         Your browser does not support <code> audio </code> element.
+    </audio> 
+    <audio id="chestOpen">
+        <source src="./sound/chestOpen.wav" type="audio/wav">        
+         Your browser does not support <code> audio </code> element.
+    </audio> 
+     <audio id="background">
+        <source src="./sound/8_Bit_Dungeon.mp3" type="audio/mpeg">        
+         Your browser does not support <code> audio </code> element.
+    </audio> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,90 @@
+
+.hero {
+	padding: 30px 0;
+	margin: 30px;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  color: #ffffff;
+}
+
+.goldhead {
+	text-align:center;
+	color:gold;
+	font-size: 36px;
+}
+
+.btn1 {
+	background-color:#44c767;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:31px 71px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn1:hover {
+	background-color:#5cbf2a;
+}
+.btn1:active {
+	position:relative;
+	top:1px;
+}
+
+.gametitle {
+	font-family: Cursive;
+	text-align: center;
+	font-size: 24px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+
+.btn2 {
+	background-color:#44c767;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:31px 71px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn2:hover {
+	background-color:#5cbf2a;
+}
+.btn2:active {
+	position:relative;
+	top:1px;
+}
+
+.game {
+	text-align:center;
+}
+
+.buttoncenter {
+	text-align:center;
+}
+
+.textborder {
+    border: 5px solid skyblue;
+}
+
+
