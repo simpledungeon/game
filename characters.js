@@ -23,20 +23,26 @@ function KingSlime(game, startingX, startingY, forcedType) {
     var type = Math.floor(Math.random() * maxType) + 1;
     if (forcedType) type = forcedType;
     this.forcedType = type;
-    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 405, 25, 15, 17, .2, 2, true, true);
-    this.animMoveLeft = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 405, 8, 15, 17, .2, 2, true, true);
-    this.animMoveDown = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 372, 8, 15.65, 17, .2, 2, true, true);
-    this.animMoveUp = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 372, 25, 15.65, 17, .2, 2, true, true);
+	
+	
+    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/Slime.png"), 0, 0 + (32 * (type - 1)), 32, 32, .2, 2, true, true);
+    this.animMoveLeft = this.animMoveRight;
+    this.animMoveDown = this.animMoveRight;
+    this.animMoveUp = this.animMoveRight;
+    //this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 405, 25, 15, 17, .2, 2, true, true);
+    //this.animMoveLeft = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 405, 8, 15, 17, .2, 2, true, true);
+    //this.animMoveDown = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 372, 8, 15.65, 17, .2, 2, true, true);
+    //this.animMoveUp = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 372, 25, 15.65, 17, .2, 2, true, true);
     this.x = startingX;
     this.y = startingY;
     this.speed = 75;
-    this.scale = 4;
+    this.scale = 2.8;
     this.counter = 0;
-    this.xToCenter = 31;
-    this.yToCenter = 34;
-    this.xWallBuffer = 31;
-    this.yWallBuffer = 34;
-    this.boundingRadius = 30;
+    this.xToCenter = 44.8;
+    this.yToCenter = 44.8;
+    this.xWallBuffer = 44.8;
+    this.yWallBuffer = 44.8;
+    this.boundingRadius = 26;
     this.boundingRadiusYAdjust = 2;
     this.reloadTimeRemaining = 0;
     if (type == 1) {
@@ -145,10 +151,15 @@ function Slime(game, startingX, startingY, forcedType) {
     var type = Math.floor(Math.random() * maxType) + 1;
     if (forcedType) type = forcedType;
     
-    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 44, 25, 12, 12, .2, 2, true, true);
-    this.animMoveLeft = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 44, 12, 12, 12, .2, 2, true, true);
-    this.animMoveDown = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 19.5, 12, 12, 12, .2, 2, true, true);
-    this.animMoveUp = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 19.5, 25, 12, 12, .2, 2, true, true);
+    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/Slime.png"), 0, 0 + (32 * (type - 1)), 32, 32, .2, 2, true, true);
+    this.animMoveLeft = this.animMoveRight;
+    this.animMoveDown = this.animMoveRight;
+    this.animMoveUp = this.animMoveRight;
+	
+    //this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 44, 25, 12, 12, .2, 2, true, true);
+    //this.animMoveLeft = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 44, 12, 12, 12, .2, 2, true, true);
+    //this.animMoveDown = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 19.5, 12, 12, 12, .2, 2, true, true);
+    //this.animMoveUp = new Animation(ASSET_MANAGER.getAsset("./img/monsters"+ type +".png"), 19.5, 25, 12, 12, .2, 2, true, true);
     this.x = startingX;
     this.y = startingY;
     switch (type) {
@@ -171,7 +182,7 @@ function Slime(game, startingX, startingY, forcedType) {
     };
     this.type = type;
     this.speed = 100;
-    this.scale = 3;
+    this.scale = 1.2;
     this.counter = 0;
     this.xToCenter = 18;
     this.yToCenter = 18;

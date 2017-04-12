@@ -201,6 +201,7 @@ ASSET_MANAGER.queueDownload("./img/title2.png");
 ASSET_MANAGER.queueDownload("./img/startButton.png");
 ASSET_MANAGER.queueDownload("./img/gameOver.png");
 ASSET_MANAGER.queueDownload("./img/Stairs.png");
+ASSET_MANAGER.queueDownload("./img/Slime.png");
 
 ASSET_MANAGER.downloadAll(function () {
     var canvas = document.getElementById("gameWorld");
