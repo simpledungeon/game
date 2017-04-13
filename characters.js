@@ -25,7 +25,7 @@ function KingSlime(game, startingX, startingY, forcedType) {
     this.forcedType = type;
 	
 	
-    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/Slime.png"), 0, 0 + (32 * (type - 1)), 32, 32, .2, 2, true, true);
+    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/Large Slimes.png"), 0, 0 + (96 * (type - 1)), 96, 96, .2, 2, true, true);
     this.animMoveLeft = this.animMoveRight;
     this.animMoveDown = this.animMoveRight;
     this.animMoveUp = this.animMoveRight;
@@ -36,12 +36,12 @@ function KingSlime(game, startingX, startingY, forcedType) {
     this.x = startingX;
     this.y = startingY;
     this.speed = 75;
-    this.scale = 2.8;
+    this.scale = .75;
     this.counter = 0;
-    this.xToCenter = 44.8;
-    this.yToCenter = 44.8;
-    this.xWallBuffer = 44.8;
-    this.yWallBuffer = 44.8;
+    this.xToCenter = 36;
+    this.yToCenter = 36;
+    this.xWallBuffer = 36;
+    this.yWallBuffer = 36;
     this.boundingRadius = 26;
     this.boundingRadiusYAdjust = 2;
     this.reloadTimeRemaining = 0;
@@ -98,7 +98,7 @@ KingSlime.prototype.update = function () {
     if (!this.reloadTimeRemaining && inDetectRange(this, this.game.link)) {
         if (this.forcedType == 1) this.reloadTimeRemaining = 1;
         else if (this.forcedType == 2) this.reloadTimeRemaining = .5;
-        else if (this.forcedType == 3) this.reloadTimeRemaining = .1;
+        else if (this.forcedType == 3) this.reloadTimeRemaining = .15;
         this.game.addEntity(new Slime(this.game, this.x + this.xToCenter, this.y + this.yToCenter,this.forcedType));
     }
     this.counter += 1;
@@ -151,7 +151,7 @@ function Slime(game, startingX, startingY, forcedType) {
     var type = Math.floor(Math.random() * maxType) + 1;
     if (forcedType) type = forcedType;
     
-    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/Slime.png"), 0, 0 + (32 * (type - 1)), 32, 32, .2, 2, true, true);
+    this.animMoveRight = new Animation(ASSET_MANAGER.getAsset("./img/Small Slimes.png"), 0, 0 + (48 * (type - 1)), 48, 48, .2, 2, true, true);
     this.animMoveLeft = this.animMoveRight;
     this.animMoveDown = this.animMoveRight;
     this.animMoveUp = this.animMoveRight;
@@ -182,7 +182,7 @@ function Slime(game, startingX, startingY, forcedType) {
     };
     this.type = type;
     this.speed = 100;
-    this.scale = 1.2;
+    this.scale = .75;
     this.counter = 0;
     this.xToCenter = 18;
     this.yToCenter = 18;
